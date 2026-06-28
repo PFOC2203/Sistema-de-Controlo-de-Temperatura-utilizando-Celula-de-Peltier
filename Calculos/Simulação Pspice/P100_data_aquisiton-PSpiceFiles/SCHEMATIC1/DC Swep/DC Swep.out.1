@@ -1,0 +1,352 @@
+
+**** 01/28/26 00:14:25 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-DC Swep"  [ C:\Users\pedro\Documents\PESTA\P100_data_aquisiton\p100_data_aquisiton-pspicefiles\schematic1\dc
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "DC Swep.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\cds_spb_home\cdssetup\OrCAD_PSpiceTIPSpice_Install\23.1.0\PSpice.ini file:
+.lib "nom_pspti.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN PARAM T -20 100 1 
+.OPTIONS ADVCONV
+.OPTIONS FILEMODELSEARCH
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source P100_DATA_AQUISITON
+.EXTERNAL OUTPUT Vtemp
+V_V2         0 -VCC 12Vdc
+V_V3         VCC 0 12Vdc
+V_V4         3.3V 0 3.3VDC
+X_U3         N04750 N04740 -VCC VCC N04823 TL084
+R_R9         3.3V N04740  100 TC=0,0 
+R_R10         N04750 N04823  { (1 + 0.003908 * T - 0.0000005775 * T*T) * 100 }
++  TC=0,0 
+R_R11         3.3V N04750  100 TC=0,0 
+R_R12         0 N04740  100 TC=0,0 
+X_U4         N23832 N05628 VCC -VCC VTEMP TL084
+R_R13         0 N05628  10k TC=0,0 
+R_R14         N23865 N05628  2.4k TC=0,0 
+R_R19         N23832 VTEMP  10k TC=0,0 
+R_R20         0 N23832  2.4k TC=0,0 
+X_U5         N24017 N23865 VCC -VCC N23865 TL084
+R_R21         3.3V N24017  2.4k TC=0,0 
+R_R22         0 N24017  100 TC=0,0 
+X_U8         0 N29136 VCC -VCC N29557 TL084
+X_U9         0 N29292 VCC -VCC N29487 TL084
+X_U10         N29705 N29743 VCC -VCC N29784 TL084
+R_R27         VTEMP N29136  10k TC=0,0 
+R_R28         N32640 N29136  10k TC=0,0 
+R_R29         VTEMP N29292  10k TC=0,0 
+R_R30         N29136 N29589  10k TC=0,0 
+R_R31         N29292 N29522  10k TC=0,0 
+R_R32         N29589 N29705  100k TC=0,0 
+R_R33         0 N29705  100k TC=0,0 
+R_R34         N29743 N29522  200k TC=0,0 
+R_R35         N29784 N29743  200k TC=0,0 
+D_D7         N29589 N29557 BA220 
+D_D8         N29557 N29136 BA220 
+D_D9         N29487 N29292 BA220 
+D_D10         N29522 N29487 BA220 
+V_V5         0 N32640 3.3Vdc
+.PARAM  t=85
+
+**** RESUMING "DC Swep.cir" ****
+.END
+
+**** 01/28/26 00:14:25 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-DC Swep"  [ C:\Users\pedro\Documents\PESTA\P100_data_aquisiton\p100_data_aquisiton-pspicefiles\schematic1\dc
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U3.DX         X_U4.DX         X_U5.DX         X_U8.DX         
+          IS  800.000000E-18  800.000000E-18  800.000000E-18  800.000000E-18 
+
+
+               X_U9.DX         X_U10.DX        
+          IS  800.000000E-18  800.000000E-18 
+
+
+**** 01/28/26 00:14:25 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-DC Swep"  [ C:\Users\pedro\Documents\PESTA\P100_data_aquisiton\p100_data_aquisiton-pspicefiles\schematic1\dc
+
+
+ ****     Junction FET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U3.JX         X_U4.JX         X_U5.JX         X_U8.JX         
+               PJF             PJF             PJF             PJF             
+         VTO   -1              -1              -1              -1            
+        BETA  270.100000E-06  270.100000E-06  270.100000E-06  270.100000E-06 
+          IS   15.000000E-12   15.000000E-12   15.000000E-12   15.000000E-12 
+
+
+               X_U9.JX         X_U10.JX        
+               PJF             PJF             
+         VTO   -1              -1            
+        BETA  270.100000E-06  270.100000E-06 
+          IS   15.000000E-12   15.000000E-12 
+
+
+WARNING -- Exceptionally high value of junction voltage (1.824e+01) or low value of thermal voltage (2.586e-02) is seen in device X_U3.DP that may lead to math overflow.
+To avoid this, try to lower the junction voltage by increasing RS (Series Resistance) or N (ideality factor) parameter values in the model.
+
+WARNING -- Exceptionally high value of junction voltage (1.838e+01) or low value of thermal voltage (2.586e-02) is seen in device X_U3.DP that may lead to math overflow.
+To avoid this, try to lower the junction voltage by increasing RS (Series Resistance) or N (ideality factor) parameter values in the model.
+
+WARNING -- Exceptionally high value of junction voltage (1.852e+01) or low value of thermal voltage (2.586e-02) is seen in device X_U3.DP that may lead to math overflow.
+To avoid this, try to lower the junction voltage by increasing RS (Series Resistance) or N (ideality factor) parameter values in the model.
+
+WARNING -- Exceptionally high value of junction voltage (1.865e+01) or low value of thermal voltage (2.586e-02) is seen in device X_U3.DP that may lead to math overflow.
+To avoid this, try to lower the junction voltage by increasing RS (Series Resistance) or N (ideality factor) parameter values in the model.
+
+WARNING -- Exceptionally high value of junction voltage (1.879e+01) or low value of thermal voltage (2.586e-02) is seen in device X_U3.DP that may lead to math overflow.
+To avoid this, try to lower the junction voltage by increasing RS (Series Resistance) or N (ideality factor) parameter values in the model.
+
+WARNING -- Exceptionally high value of junction voltage (1.893e+01) or low value of thermal voltage (2.586e-02) is seen in device X_U3.DP that may lead to math overflow.
+To avoid this, try to lower the junction voltage by increasing RS (Series Resistance) or N (ideality factor) parameter values in the model.
+
+WARNING -- Exceptionally high value of junction voltage (1.907e+01) or low value of thermal voltage (2.586e-02) is seen in device X_U3.DP that may lead to math overflow.
+To avoid this, try to lower the junction voltage by increasing RS (Series Resistance) or N (ideality factor) parameter values in the model.
+
+WARNING -- Exceptionally high value of junction voltage (1.920e+01) or low value of thermal voltage (2.586e-02) is seen in device X_U3.DP that may lead to math overflow.
+To avoid this, try to lower the junction voltage by increasing RS (Series Resistance) or N (ideality factor) parameter values in the model.
+
+WARNING -- Exceptionally high value of junction voltage (1.934e+01) or low value of thermal voltage (2.586e-02) is seen in device X_U3.DP that may lead to math overflow.
+To avoid this, try to lower the junction voltage by increasing RS (Series Resistance) or N (ideality factor) parameter values in the model.
+
+WARNING -- Exceptionally high value of junction voltage (1.947e+01) or low value of thermal voltage (2.586e-02) is seen in device X_U3.DP that may lead to math overflow.
+To avoid this, try to lower the junction voltage by increasing RS (Series Resistance) or N (ideality factor) parameter values in the model.
+
+WARNING -- Exceptionally high value of junction voltage (1.961e+01) or low value of thermal voltage (2.586e-02) is seen in device X_U3.DP that may lead to math overflow.
+To avoid this, try to lower the junction voltage by increasing RS (Series Resistance) or N (ideality factor) parameter values in the model.
+
+WARNING -- Exceptionally high value of junction voltage (1.974e+01) or low value of thermal voltage (2.586e-02) is seen in device X_U3.DP that may lead to math overflow.
+To avoid this, try to lower the junction voltage by increasing RS (Series Resistance) or N (ideality factor) parameter values in the model.
+
+WARNING -- Exceptionally high value of junction voltage (1.987e+01) or low value of thermal voltage (2.586e-02) is seen in device X_U3.DP that may lead to math overflow.
+To avoid this, try to lower the junction voltage by increasing RS (Series Resistance) or N (ideality factor) parameter values in the model.
+
+WARNING -- Exceptionally high value of junction voltage (2.000e+01) or low value of thermal voltage (2.586e-02) is seen in device X_U3.DP that may lead to math overflow.
+To avoid this, try to lower the junction voltage by increasing RS (Series Resistance) or N (ideality factor) parameter values in the model.
+
+WARNING -- Exceptionally high value of junction voltage (2.013e+01) or low value of thermal voltage (2.586e-02) is seen in device X_U3.DP that may lead to math overflow.
+To avoid this, try to lower the junction voltage by increasing RS (Series Resistance) or N (ideality factor) parameter values in the model.
+
+WARNING -- Exceptionally high value of junction voltage (2.026e+01) or low value of thermal voltage (2.586e-02) is seen in device X_U3.DP that may lead to math overflow.
+To avoid this, try to lower the junction voltage by increasing RS (Series Resistance) or N (ideality factor) parameter values in the model.
+
+WARNING -- Exceptionally high value of junction voltage (2.039e+01) or low value of thermal voltage (2.586e-02) is seen in device X_U3.DP that may lead to math overflow.
+To avoid this, try to lower the junction voltage by increasing RS (Series Resistance) or N (ideality factor) parameter values in the model.
+
+WARNING -- Exceptionally high value of junction voltage (2.052e+01) or low value of thermal voltage (2.586e-02) is seen in device X_U3.DP that may lead to math overflow.
+To avoid this, try to lower the junction voltage by increasing RS (Series Resistance) or N (ideality factor) parameter values in the model.
+
+WARNING -- Exceptionally high value of junction voltage (2.065e+01) or low value of thermal voltage (2.586e-02) is seen in device X_U3.DP that may lead to math overflow.
+To avoid this, try to lower the junction voltage by increasing RS (Series Resistance) or N (ideality factor) parameter values in the model.
+
+WARNING -- Exceptionally high value of junction voltage (2.077e+01) or low value of thermal voltage (2.586e-02) is seen in device X_U3.DP that may lead to math overflow.
+To avoid this, try to lower the junction voltage by increasing RS (Series Resistance) or N (ideality factor) parameter values in the model.
+
+WARNING -- Exceptionally high value of junction voltage (2.090e+01) or low value of thermal voltage (2.586e-02) is seen in device X_U3.DP that may lead to math overflow.
+To avoid this, try to lower the junction voltage by increasing RS (Series Resistance) or N (ideality factor) parameter values in the model.
+
+WARNING -- Exceptionally high value of junction voltage (2.102e+01) or low value of thermal voltage (2.586e-02) is seen in device X_U3.DP that may lead to math overflow.
+To avoid this, try to lower the junction voltage by increasing RS (Series Resistance) or N (ideality factor) parameter values in the model.
+
+WARNING -- Exceptionally high value of junction voltage (2.114e+01) or low value of thermal voltage (2.586e-02) is seen in device X_U3.DP that may lead to math overflow.
+To avoid this, try to lower the junction voltage by increasing RS (Series Resistance) or N (ideality factor) parameter values in the model.
+
+WARNING -- Exceptionally high value of junction voltage (2.127e+01) or low value of thermal voltage (2.586e-02) is seen in device X_U3.DP that may lead to math overflow.
+To avoid this, try to lower the junction voltage by increasing RS (Series Resistance) or N (ideality factor) parameter values in the model.
+
+WARNING -- Exceptionally high value of junction voltage (2.139e+01) or low value of thermal voltage (2.586e-02) is seen in device X_U3.DP that may lead to math overflow.
+To avoid this, try to lower the junction voltage by increasing RS (Series Resistance) or N (ideality factor) parameter values in the model.
+
+WARNING -- Exceptionally high value of junction voltage (2.151e+01) or low value of thermal voltage (2.586e-02) is seen in device X_U3.DP that may lead to math overflow.
+To avoid this, try to lower the junction voltage by increasing RS (Series Resistance) or N (ideality factor) parameter values in the model.
+
+WARNING -- Exceptionally high value of junction voltage (2.163e+01) or low value of thermal voltage (2.586e-02) is seen in device X_U3.DP that may lead to math overflow.
+To avoid this, try to lower the junction voltage by increasing RS (Series Resistance) or N (ideality factor) parameter values in the model.
+
+WARNING -- Exceptionally high value of junction voltage (2.174e+01) or low value of thermal voltage (2.586e-02) is seen in device X_U3.DP that may lead to math overflow.
+To avoid this, try to lower the junction voltage by increasing RS (Series Resistance) or N (ideality factor) parameter values in the model.
+
+WARNING -- Exceptionally high value of junction voltage (2.186e+01) or low value of thermal voltage (2.586e-02) is seen in device X_U3.DP that may lead to math overflow.
+To avoid this, try to lower the junction voltage by increasing RS (Series Resistance) or N (ideality factor) parameter values in the model.
+
+WARNING -- Exceptionally high value of junction voltage (2.197e+01) or low value of thermal voltage (2.586e-02) is seen in device X_U3.DP that may lead to math overflow.
+To avoid this, try to lower the junction voltage by increasing RS (Series Resistance) or N (ideality factor) parameter values in the model.
+
+WARNING -- Exceptionally high value of junction voltage (2.209e+01) or low value of thermal voltage (2.586e-02) is seen in device X_U3.DP that may lead to math overflow.
+To avoid this, try to lower the junction voltage by increasing RS (Series Resistance) or N (ideality factor) parameter values in the model.
+
+WARNING -- Exceptionally high value of junction voltage (2.220e+01) or low value of thermal voltage (2.586e-02) is seen in device X_U3.DP that may lead to math overflow.
+To avoid this, try to lower the junction voltage by increasing RS (Series Resistance) or N (ideality factor) parameter values in the model.
+
+WARNING -- Exceptionally high value of junction voltage (2.231e+01) or low value of thermal voltage (2.586e-02) is seen in device X_U3.DP that may lead to math overflow.
+To avoid this, try to lower the junction voltage by increasing RS (Series Resistance) or N (ideality factor) parameter values in the model.
+
+WARNING -- Exceptionally high value of junction voltage (2.242e+01) or low value of thermal voltage (2.586e-02) is seen in device X_U3.DP that may lead to math overflow.
+To avoid this, try to lower the junction voltage by increasing RS (Series Resistance) or N (ideality factor) parameter values in the model.
+
+WARNING -- Exceptionally high value of junction voltage (2.252e+01) or low value of thermal voltage (2.586e-02) is seen in device X_U3.DP that may lead to math overflow.
+To avoid this, try to lower the junction voltage by increasing RS (Series Resistance) or N (ideality factor) parameter values in the model.
+
+WARNING -- Exceptionally high value of junction voltage (2.263e+01) or low value of thermal voltage (2.586e-02) is seen in device X_U3.DP that may lead to math overflow.
+To avoid this, try to lower the junction voltage by increasing RS (Series Resistance) or N (ideality factor) parameter values in the model.
+
+WARNING -- Exceptionally high value of junction voltage (2.273e+01) or low value of thermal voltage (2.586e-02) is seen in device X_U3.DP that may lead to math overflow.
+To avoid this, try to lower the junction voltage by increasing RS (Series Resistance) or N (ideality factor) parameter values in the model.
+
+WARNING -- Exceptionally high value of junction voltage (2.283e+01) or low value of thermal voltage (2.586e-02) is seen in device X_U3.DP that may lead to math overflow.
+To avoid this, try to lower the junction voltage by increasing RS (Series Resistance) or N (ideality factor) parameter values in the model.
+
+WARNING -- Exceptionally high value of junction voltage (2.293e+01) or low value of thermal voltage (2.586e-02) is seen in device X_U3.DP that may lead to math overflow.
+To avoid this, try to lower the junction voltage by increasing RS (Series Resistance) or N (ideality factor) parameter values in the model.
+
+WARNING -- Exceptionally high value of junction voltage (2.303e+01) or low value of thermal voltage (2.586e-02) is seen in device X_U3.DP that may lead to math overflow.
+To avoid this, try to lower the junction voltage by increasing RS (Series Resistance) or N (ideality factor) parameter values in the model.
+
+WARNING -- Exceptionally high value of junction voltage (2.312e+01) or low value of thermal voltage (2.586e-02) is seen in device X_U3.DP that may lead to math overflow.
+To avoid this, try to lower the junction voltage by increasing RS (Series Resistance) or N (ideality factor) parameter values in the model.
+
+WARNING -- Exceptionally high value of junction voltage (2.322e+01) or low value of thermal voltage (2.586e-02) is seen in device X_U3.DP that may lead to math overflow.
+To avoid this, try to lower the junction voltage by increasing RS (Series Resistance) or N (ideality factor) parameter values in the model.
+
+WARNING -- Exceptionally high value of junction voltage (2.330e+01) or low value of thermal voltage (2.586e-02) is seen in device X_U3.DP that may lead to math overflow.
+To avoid this, try to lower the junction voltage by increasing RS (Series Resistance) or N (ideality factor) parameter values in the model.
+
+WARNING -- Exceptionally high value of junction voltage (2.339e+01) or low value of thermal voltage (2.586e-02) is seen in device X_U3.DP that may lead to math overflow.
+To avoid this, try to lower the junction voltage by increasing RS (Series Resistance) or N (ideality factor) parameter values in the model.
+
+WARNING -- Exceptionally high value of junction voltage (2.347e+01) or low value of thermal voltage (2.586e-02) is seen in device X_U3.DP that may lead to math overflow.
+To avoid this, try to lower the junction voltage by increasing RS (Series Resistance) or N (ideality factor) parameter values in the model.
+
+WARNING -- Exceptionally high value of junction voltage (2.355e+01) or low value of thermal voltage (2.586e-02) is seen in device X_U3.DP that may lead to math overflow.
+To avoid this, try to lower the junction voltage by increasing RS (Series Resistance) or N (ideality factor) parameter values in the model.
+
+WARNING -- Exceptionally high value of junction voltage (2.363e+01) or low value of thermal voltage (2.586e-02) is seen in device X_U3.DP that may lead to math overflow.
+To avoid this, try to lower the junction voltage by increasing RS (Series Resistance) or N (ideality factor) parameter values in the model.
+
+WARNING -- Exceptionally high value of junction voltage (2.370e+01) or low value of thermal voltage (2.586e-02) is seen in device X_U3.DP that may lead to math overflow.
+To avoid this, try to lower the junction voltage by increasing RS (Series Resistance) or N (ideality factor) parameter values in the model.
+
+WARNING -- Exceptionally high value of junction voltage (2.376e+01) or low value of thermal voltage (2.586e-02) is seen in device X_U3.DP that may lead to math overflow.
+To avoid this, try to lower the junction voltage by increasing RS (Series Resistance) or N (ideality factor) parameter values in the model.
+
+WARNING -- Exceptionally high value of junction voltage (2.382e+01) or low value of thermal voltage (2.586e-02) is seen in device X_U3.DP that may lead to math overflow.
+To avoid this, try to lower the junction voltage by increasing RS (Series Resistance) or N (ideality factor) parameter values in the model.
+
+WARNING -- Exceptionally high value of junction voltage (2.388e+01) or low value of thermal voltage (2.586e-02) is seen in device X_U3.DP that may lead to math overflow.
+To avoid this, try to lower the junction voltage by increasing RS (Series Resistance) or N (ideality factor) parameter values in the model.
+
+WARNING -- Exceptionally high value of junction voltage (2.392e+01) or low value of thermal voltage (2.586e-02) is seen in device X_U3.DP that may lead to math overflow.
+To avoid this, try to lower the junction voltage by increasing RS (Series Resistance) or N (ideality factor) parameter values in the model.
+
+WARNING -- Exceptionally high value of junction voltage (2.396e+01) or low value of thermal voltage (2.586e-02) is seen in device X_U3.DP that may lead to math overflow.
+To avoid this, try to lower the junction voltage by increasing RS (Series Resistance) or N (ideality factor) parameter values in the model.
+
+WARNING -- Exceptionally high value of junction voltage (2.400e+01) or low value of thermal voltage (2.586e-02) is seen in device X_U3.DP that may lead to math overflow.
+To avoid this, try to lower the junction voltage by increasing RS (Series Resistance) or N (ideality factor) parameter values in the model.
+
+ERROR(ORPSIM-16550): Floating point computation failed during matrix solution. Possible solutions: 1)Ensure that all device parameters are in valid range. 2)Try using .options LIMIT
+
+INTERNAL ERROR -- Overflow, Multiply(-2.0845e+223, 7.46481e+85)
+
+ABORTING SIMULATION
+**** 01/28/26 00:14:25 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-DC Swep"  [ C:\Users\pedro\Documents\PESTA\P100_data_aquisiton\p100_data_aquisiton-pspicefiles\schematic1\dc
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+Node counts:
+  Top level (NUNODS)                =          22
+  External (NCNODS)                 =         100
+  Total (NUMNOD)                    =         100
+
+Total device count (NUMEL)          =         195
+  Capacitors (C)                    =          12
+  Diodes (D)                        =          34
+  VCVS (E)                          =           6
+  CCCS (F)                          =           6
+  VCCS (G)                          =          12
+  CCVS (H)                          =           6
+  Current Sources (I)               =           6
+  JFETs (J)                         =          12
+  Resistors (R)                     =          61
+  Voltage Sources (V)               =          40
+
+Number of subcircuits (X)           =           6
+
+Matrix statistics:
+  Matrix size (NSTOP)               =         152
+  Initial no. elements (NTTAR)      =         599
+  No. elements w/ fillin (NTTBR)    =         996
+  No. fillins (IFILL)               =         397
+  No. overflows (NTTOV)             =         465
+  No. LU operations (IOPS)          =       20103
+  Percent sparsity (PERSPA)         =      95.689
+
+Analysis statistics:
+  No. total time points (NUMTTP)    =           0
+  No. rejected time points (NUMRTP) =           0
+  No. iterations (NUMNIT)           =           0
+
+Load Threads                        =          12
+
+Runtime statistics:                       Seconds      Iterations
+  Matrix load                       =        0.00
+  Matrix solution                   =        0.00               2
+  Readin                            =         .25
+  General setup                     =         .02
+  CMI setup                     =        0.00
+  Setup                             =        0.00
+  DC sweep                          =        0.00               0
+  Bias point                        =        0.00               0
+  AC and noise                      =        0.00               0
+  Total transient analysis          =        0.00
+  Output                            =        0.00
+  Overhead                          =         .03
+  Total job time (using Solver 1)   =         .28
+

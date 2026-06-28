@@ -1,0 +1,85 @@
+
+**** 12/08/25 19:56:06 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-DC"  [ C:\Users\pedro\Documents\PESTA\P100_data_aquisiton\p100_data_aquisiton-pspicefiles\schematic1\dc.sim 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "DC.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\cds_spb_home\cdssetup\OrCAD_PSpiceTIPSpice_Install\23.1.0\PSpice.ini file:
+.lib "nom_pspti.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN PARAM T -30 110 1 
+.OPTIONS ADVCONV
+.OPTIONS FILEMODELSEARCH
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source P100_DATA_AQUISITON
+.EXTERNAL OUTPUT Vtemp
+V_V2         0 -VCC 12Vdc
+V_V3         VCC 0 12Vdc
+V_V4         3.3V 0 3.3VDC
+X_U3         N04740 N04750 VCC -VCC N04823 TL084
+R_R9         3.3V N04740  100 TC=0,0 
+R_R10         N04740 N04823  { (1 + 0.003908 * T - 0.0000005775 * T*T) * 100 }
++  TC=0,0 
+R_R11         3.3V N04750  100 TC=0,0 
+R_R12         0 N04750  100 TC=0,0 
+X_U4         N23832 N05628 VCC -VCC VTEMP TL084
+R_R13         0 N05628  10k TC=0,0 
+R_R14         N23865 N05628  2.4k TC=0,0 
+R_R19         N23832 VTEMP  10k TC=0,0 
+R_R20         N04823 N23832  2.4k TC=0,0 
+X_U5         N24017 N23865 VCC -VCC N23865 TL084
+R_R21         3.3V N24017  2.4k TC=0,0 
+R_R22         0 N24017  100 TC=0,0 
+X_U8         0 N29136 VCC -VCC N29557 TL084
+X_U9         0 N29292 VCC -VCC N29487 TL084
+X_U10         N29705 N29743 VCC -VCC N29784 TL084
+R_R27         0 N29136  10k TC=0,0 
+R_R28         N32640 N29136  10k TC=0,0 
+R_R29         VTEMP N29292  10k TC=0,0 
+D_D2         N29557 N29136 Dbreak 
+D_D3         N29589 N29557 Dbreak 
+R_R30         N29136 N29589  10k TC=0,0 
+D_D4         N29487 N29292 Dbreak 
+D_D5         N29522 N29487 Dbreak 
+R_R31         N29292 N29522  10k TC=0,0 
+R_R32         N29589 N29705  100k TC=0,0 
+R_R33         0 N29705  100k TC=0,0 
+R_R34         N29743 N29522  200k TC=0,0 
+R_R35         N29784 N29743  200k TC=0,0 
+R_R26         N27631 N28055  10k TC=0,0 
+X_U7         0 N28055 VCC -VCC N28063 TL084
+R_R23         VTEMP N27627  10k TC=0,0 
+D_D1         N27631 N27627 BZV85C3V6/PLP 
+X_U6         0 N27627 VCC -VCC N27631 TL084
+R_R24         N27627 N27631  10k TC=0,0 
+R_R25         N28055 N28063  10k TC=0,0 
+V_V5         0 N32640 Vdc
+----------------------$
+ERROR -- Expecting keyword STIMULUS, saw Vdc.
+
+.PARAM  t=85
+
+**** RESUMING DC.cir ****
+.END
+

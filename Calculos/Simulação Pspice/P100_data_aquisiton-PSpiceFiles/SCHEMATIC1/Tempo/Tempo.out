@@ -1,0 +1,282 @@
+
+**** 01/27/26 23:42:50 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Tempo"  [ C:\Users\pedro\Documents\PESTA\P100_data_aquisiton\p100_data_aquisiton-pspicefiles\schematic1\temp
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Tempo.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\cds_spb_home\cdssetup\OrCAD_PSpiceTIPSpice_Install\23.1.0\PSpice.ini file:
+.lib "nom_pspti.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 10ns 0 
+.OPTIONS ADVCONV
+.OPTIONS FILEMODELSEARCH
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source P100_DATA_AQUISITON
+.EXTERNAL OUTPUT Vtemp
+V_V2         0 -VCC 15Vdc
+V_V3         VCC 0 15Vdc
+V_V4         3.3V 0 3.3VDC
+X_U3         N04740 N04750 VCC -VCC N04823 TL084
+R_R9         3.3V N04740  100 TC=0,0 
+R_R10         N04740 N04823  108.1 TC=0,0 
+R_R11         3.3V N04750  100 TC=0,0 
+R_R12         0 N04750  100 TC=0,0 
+X_U4         N23836 N05628 VCC -VCC VTEMP TL084
+R_R13         0 N05628  10k TC=0,0 
+R_R14         N23865 N05628  2.4k TC=0,0 
+R_R19         N23836 VTEMP  10k TC=0,0 
+R_R20         0 N04823  2.4k TC=0,0 
+X_U5         N24017 N23865 VCC -VCC N23865 TL084
+R_R21         3.3V N24017  2.4k TC=0,0 
+R_R22         0 N24017  100 TC=0,0 
+X_U8         0 N29136 VCC -VCC N29557 TL084
+X_U9         0 N29292 VCC -VCC N29487 TL084
+X_U10         N29705 N29743 VCC -VCC N29784 TL084
+R_R27         VTEMP N29136  10k TC=0,0 
+R_R28         N32640 N29136  10k TC=0,0 
+R_R29         VTEMP N29292  10k TC=0,0 
+R_R30         N29136 N29589  10k TC=0,0 
+R_R31         N29292 N29522  10k TC=0,0 
+R_R32         N29589 N29705  100k TC=0,0 
+R_R33         0 N29705  100k TC=0,0 
+R_R34         N29743 N29522  200k TC=0,0 
+R_R35         N29784 N29743  200k TC=0,0 
+D_D7         N29589 N29557 BA220 
+D_D8         N29557 N29136 BA220 
+D_D9         N29487 N29292 BA220 
+D_D10         N29522 N29487 BA220 
+V_V5         0 N32640 3.3Vdc
+.PARAM  t=85
+
+**** RESUMING Tempo.cir ****
+.END
+
+**** 01/27/26 23:42:50 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Tempo"  [ C:\Users\pedro\Documents\PESTA\P100_data_aquisiton\p100_data_aquisiton-pspicefiles\schematic1\temp
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U3.DX         X_U4.DX         X_U5.DX         X_U8.DX         
+          IS  800.000000E-18  800.000000E-18  800.000000E-18  800.000000E-18 
+
+
+               X_U9.DX         X_U10.DX        
+          IS  800.000000E-18  800.000000E-18 
+
+
+**** 01/27/26 23:42:50 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Tempo"  [ C:\Users\pedro\Documents\PESTA\P100_data_aquisiton\p100_data_aquisiton-pspicefiles\schematic1\temp
+
+
+ ****     Junction FET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U3.JX         X_U4.JX         X_U5.JX         X_U8.JX         
+               PJF             PJF             PJF             PJF             
+         VTO   -1              -1              -1              -1            
+        BETA  270.100000E-06  270.100000E-06  270.100000E-06  270.100000E-06 
+          IS   15.000000E-12   15.000000E-12   15.000000E-12   15.000000E-12 
+
+
+               X_U9.JX         X_U10.JX        
+               PJF             PJF             
+         VTO   -1              -1            
+        BETA  270.100000E-06  270.100000E-06 
+          IS   15.000000E-12   15.000000E-12 
+
+
+**** 01/27/26 23:42:50 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Tempo"  [ C:\Users\pedro\Documents\PESTA\P100_data_aquisiton\p100_data_aquisiton-pspicefiles\schematic1\temp
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  VCC)   15.0000  ( -VCC)  -15.0000  ( 3.3V)    3.3000  (VTEMP)  -13.4780      
+
+(N04740)    1.6500 (N04750)    1.6500 (N04823)    -.1336 (N05628)     .1065     
+
+(N23836)  -13.4780 (N23865)     .1320 (N24017)     .1320 (N29136) 6.056E-06     
+
+(N29292) 6.535E-06 (N29487)     .6119 (N29522) 41.96E-06 (N29557)     .6226     
+
+(N29589) 39.92E-06 (N29705) 17.71E-06 (N29743) 28.68E-06 (N29784) 24.41E-06     
+
+(N32640)   -3.3000 (X_U3.6) 724.7E-06 (X_U3.7)   -2.6170 (X_U3.8)   -2.6170     
+
+(X_U3.9)    0.0000 (X_U4.6)   20.8110 (X_U4.7)  -13.9120 (X_U4.8)  -13.9120     
+
+(X_U4.9)    0.0000 (X_U5.6)-19.15E-06 (X_U5.7)     .1336 (X_U5.8)     .1336     
+
+(X_U5.9)    0.0000 (X_U8.6)-159.7E-06 (X_U8.7)     .8742 (X_U8.8)     .8742     
+
+(X_U8.9)    0.0000 (X_U9.6)-144.1E-06 (X_U9.7)     .8140 (X_U9.8)     .8140     
+
+(X_U9.9)    0.0000 (X_U10.6)-3.456E-09                   (X_U10.7) 24.41E-06    
+
+(X_U10.8) 24.41E-06                   (X_U10.9)    0.0000                       
+
+(X_U3.10)    1.2489                   (X_U3.11)  -14.6570                       
+
+(X_U3.12)  -14.6570                   (X_U3.53)   12.8000                       
+
+(X_U3.54)  -12.8000                   (X_U3.90)  -16.5560                       
+
+(X_U3.91)   25.0000                   (X_U3.92)  -25.0000                       
+
+(X_U3.99)    0.0000                   (X_U4.10)  -13.5740                       
+
+(X_U4.11)  -15.0000                   (X_U4.12)  -14.2640                       
+
+(X_U4.53)   12.8000                   (X_U4.54)  -12.8000                       
+
+(X_U4.90)   -2.8919                   (X_U4.91)   25.0000                       
+
+(X_U4.92)  -25.0000                   (X_U4.99)    0.0000                       
+
+(X_U5.10)    -.2668                   (X_U5.11)  -14.6550                       
+
+(X_U5.12)  -14.6550                   (X_U5.53)   12.8000                       
+
+(X_U5.54)  -12.8000                   (X_U5.90)     .0106                       
+
+(X_U5.91)   25.0000                   (X_U5.92)  -25.0000                       
+
+(X_U5.99)    0.0000                   (X_U8.10)    -.3986                       
+
+(X_U8.11)  -14.6550                   (X_U8.12)  -14.6550                       
+
+(X_U8.53)   12.8000                   (X_U8.54)  -12.8000                       
+
+(X_U8.90)    1.6778                   (X_U8.91)   25.0000                       
+
+(X_U8.92)  -25.0000                   (X_U8.99)    0.0000                       
+
+(X_U9.10)    -.3986                   (X_U9.11)  -14.6550                       
+
+(X_U9.12)  -14.6550                   (X_U9.53)   12.8000                       
+
+(X_U9.54)  -12.8000                   (X_U9.90)    1.3478                       
+
+(X_U9.91)   25.0000                   (X_U9.92)  -25.0000                       
+
+(X_U9.99)    0.0000                   (X_U10.10)    -.3986                      
+
+(X_U10.11)  -14.6550                  (X_U10.12)  -14.6550                      
+
+(X_U10.53)   12.8000                  (X_U10.54)  -12.8000                      
+
+(X_U10.90)-21.35E-09                  (X_U10.91)   25.0000                      
+
+(X_U10.92)  -25.0000                  (X_U10.99)    0.0000                  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2        -8.498E-02
+    V_V3        -8.516E-02
+    V_V4        -3.432E-02
+    V_V5        -3.300E-04
+    X_U3.VB      7.247E-09
+    X_U3.VC      1.293E-11
+    X_U3.VE      1.267E-11
+    X_U3.VLIM   -1.656E-02
+    X_U3.VLP    -4.156E-11
+    X_U3.VLN    -8.445E-12
+    X_U4.VB      2.081E-04
+    X_U4.VC      2.628E-11
+    X_U4.VE     -1.962E-04
+    X_U4.VLIM   -2.892E-03
+    X_U4.VLP    -2.789E-11
+    X_U4.VLN    -2.211E-11
+    X_U5.VB     -1.915E-10
+    X_U5.VC      1.267E-11
+    X_U5.VE      1.293E-11
+    X_U5.VLIM    1.065E-05
+    X_U5.VLP    -2.499E-11
+    X_U5.VLN    -2.501E-11
+    X_U8.VB     -1.597E-09
+    X_U8.VC      1.218E-11
+    X_U8.VE      1.342E-11
+    X_U8.VLIM    1.678E-03
+    X_U8.VLP    -2.332E-11
+    X_U8.VLN    -2.668E-11
+    X_U9.VB     -1.441E-09
+    X_U9.VC      1.219E-11
+    X_U9.VE      1.341E-11
+    X_U9.VLIM    1.348E-03
+    X_U9.VLP    -2.365E-11
+    X_U9.VLN    -2.635E-11
+    X_U10.VB    -3.455E-14
+    X_U10.VC     1.280E-11
+    X_U10.VE     1.280E-11
+    X_U10.VLIM  -2.135E-11
+    X_U10.VLP   -2.500E-11
+    X_U10.VLN   -2.500E-11
+
+    TOTAL POWER DISSIPATION   2.67E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 01/27/26 23:42:50 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Tempo"  [ C:\Users\pedro\Documents\PESTA\P100_data_aquisiton\p100_data_aquisiton-pspicefiles\schematic1\temp
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .38
+

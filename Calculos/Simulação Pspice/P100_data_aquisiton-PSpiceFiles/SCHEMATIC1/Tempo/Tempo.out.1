@@ -1,0 +1,65 @@
+
+**** 11/13/25 19:22:49 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Tempo"  [ C:\Users\pedro\Documents\PESTA\P100_data_aquisiton\p100_data_aquisiton-pspicefiles\schematic1\temp
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Tempo.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\cds_spb_home\cdssetup\OrCAD_PSpiceTIPSpice_Install\23.1.0\PSpice.ini file:
+.lib "nom_pspti.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 10ns 0 
+.OPTIONS ADVCONV
+.OPTIONS FILEMODELSEARCH
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source P100_DATA_AQUISITON
+V_V2         0 -VCC 15Vdc
+V_V3         VCC 0 15Vdc
+V_V4         5V 0 5Vdc
+X_U3         N04740 N04750 VCC -VCC N04823 TL084
+R_R9         5V N04740  100 TC=0,0 
+R_R10         N04740 N04823  { (1 + 0.003908 * T - 0.0000005775 * T*T) * 100 }
++  TC=0,0 
+R_R11         5V N04750  100 TC=0,0 
+R_R12         0 N04750  100 TC=0,0 
+R_R15         N23084 0  { (1 + 0.003908 * T - 0.0000005775 * T*T) * 100 }
++  TC=0,0 
+R_R16         5V N23084  100 TC=0,0 
+R_R17         5V N23110  100 TC=0,0 
+R_R18         N23110 0  100 TC=0,0 
+X_U4         N24043 N24182 VCC -VCC N24036 TL084
+R_R19         N23869 5V  2.4k TC=0,0 
+R_R20         0 N23869  100 TC=0,0 
+R_R21         N25001 N24182  1k TC=0,0 
+R_R22         N24602 N24043  1k TC=0,0 
+R_R23         N24043 N24036  1k TC=0,0 
+R_R24         0 N24182  1k TC=0,0 
+V_V5         N24602 0 0.96
+X_U5         N25019 N25001 VCC -VCC N25001 TL084
+.PARAM  t=0
+
+**** RESUMING Tempo.cir ****
+.END
+
+ERROR(ORPSIM-15141): Less than 2 connections at node N25019.
+
