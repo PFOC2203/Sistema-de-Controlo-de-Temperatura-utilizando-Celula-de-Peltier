@@ -1,6 +1,6 @@
 (ExpressProject "P100_data_aquisiton"
   (ProjectVersion "19981106")
-  (SoftwareVersion "23.1-2024 S001-[02/16/26]")
+  (SoftwareVersion "23.1-2024 S001-[07/05/26]")
   (ProjectType "Analog or A/D Mixed Mode")
   (Folder "Design Resources"
     (Folder "Library")
@@ -129,7 +129,11 @@
   (GlobalState
     (FileView
       (Path "Design Resources")
-      (Select "Design Resources"))
+      (Path "Design Resources"
+         "C:\Users\VICTUS\OneDrive - Instituto Superior de Engenharia do Porto\licenciaturia em eltrotecnica e de computadores\3 ano\Pesta\Projeto\Calculos\Simulação Pspice\p100_data_aquisiton.dsn")
+      (Path "Design Resources"
+         "C:\Users\VICTUS\OneDrive - Instituto Superior de Engenharia do Porto\licenciaturia em eltrotecnica e de computadores\3 ano\Pesta\Projeto\Calculos\Simulação Pspice\p100_data_aquisiton.dsn"
+         "SCHEMATIC1"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
@@ -140,21 +144,21 @@
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 0 1 -1 -1 -1 -1 5 1474 24 765")
-        (Scroll "-248 -5")
-        (Zoom "97")
+        (Scroll "-233 0")
+        (Zoom "100")
         (Occurrence "/"))
       (Path
-         "C:\USERS\VICTUS\DOWNLOADS\PESTA\PESTA\P100_DATA_AQUISITON\P100_DATA_AQUISITON.DSN")
+         "C:\USERS\VICTUS\ONEDRIVE - INSTITUTO SUPERIOR DE ENGENHARIA DO PORTO\LICENCIATURIA EM ELTROTECNICA E DE COMPUTADORES\3 ANO\PESTA\PROJETO\CALCULOS\SIMULAÇÃO PSPICE\P100_DATA_AQUISITON.DSN")
       (Schematic "SCHEMATIC1")
       (Page "PAGE2"))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 0 1 -1 -1 -1 -1 5 1474 24 765")
-        (Scroll "-248 -5")
-        (Zoom "97")
+        (Scroll "-233 0")
+        (Zoom "100")
         (Occurrence "/"))
       (Path
-         "C:\USERS\VICTUS\DOWNLOADS\PESTA\PESTA\P100_DATA_AQUISITON\P100_DATA_AQUISITON.DSN")
+         "C:\USERS\VICTUS\ONEDRIVE - INSTITUTO SUPERIOR DE ENGENHARIA DO PORTO\LICENCIATURIA EM ELTROTECNICA E DE COMPUTADORES\3 ANO\PESTA\PROJETO\CALCULOS\SIMULAÇÃO PSPICE\P100_DATA_AQUISITON.DSN")
       (Schematic "SCHEMATIC1")
       (Page "PAGE1"))))

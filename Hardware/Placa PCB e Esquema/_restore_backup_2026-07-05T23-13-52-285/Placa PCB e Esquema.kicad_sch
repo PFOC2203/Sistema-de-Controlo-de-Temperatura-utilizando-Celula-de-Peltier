@@ -3828,12 +3828,6 @@
 		(uuid "34838246-7039-420f-aa3d-359f572d998b")
 	)
 	(junction
-		(at 41.91 81.28)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "477d4f0b-9ca7-408f-b5b1-96750cf50ce8")
-	)
-	(junction
 		(at 22.86 111.76)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3850,6 +3844,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4dcb9b9c-8add-4506-a3f7-b44c41b62561")
+	)
+	(junction
+		(at 41.91 81.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5ca9409b-e535-4210-b964-cba9d1eab7d6")
 	)
 	(junction
 		(at 124.46 111.76)
@@ -4263,7 +4263,7 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 91.44) (xy 41.91 93.98)
+			(xy 41.91 88.9) (xy 41.91 93.98)
 		)
 		(stroke
 			(width 0)
@@ -4960,16 +4960,6 @@
 			(type default)
 		)
 		(uuid "7b6dc687-d48a-48cd-8ed8-9483704b6e96")
-	)
-	(wire
-		(pts
-			(xy 41.91 83.82) (xy 41.91 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7f404bac-924d-4a09-abb8-81f932745860")
 	)
 	(wire
 		(pts
@@ -10501,7 +10491,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 41.91 87.63 180)
+		(at 41.91 85.09 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10511,7 +10501,7 @@
 		(dnp no)
 		(uuid "b4da0d0c-62b4-40d1-9fe6-968d887b12a6")
 		(property "Reference" "R7"
-			(at 38.862 86.868 0)
+			(at 38.862 84.328 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10521,7 +10511,7 @@
 			)
 		)
 		(property "Value" "100"
-			(at 38.354 90.17 0)
+			(at 38.354 87.63 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10531,7 +10521,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
-			(at 43.688 87.63 90)
+			(at 43.688 85.09 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10542,7 +10532,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 41.91 87.63 0)
+			(at 41.91 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10553,7 +10543,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 41.91 87.63 0)
+			(at 41.91 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
