@@ -5781,7 +5781,7 @@
 		)
 		(uuid "314b63bf-3653-4ce5-accd-21844d188de6")
 	)
-	(label "Controle Celula"
+	(label "Aquecer{slash}Arrefecer"
 		(at 20.32 158.75 0)
 		(effects
 			(font
@@ -5791,7 +5791,7 @@
 		)
 		(uuid "3da4ff0b-70ce-44f2-bef9-e8d665d3e04f")
 	)
-	(label "Aquecer{slash}Arrefecer"
+	(label "Controle Celula"
 		(at 214.63 87.63 0)
 		(effects
 			(font
@@ -5801,7 +5801,7 @@
 		)
 		(uuid "c41fe2f6-0fe5-44e2-892b-ff8c413823f6")
 	)
-	(label "Aquecer{slash}Arrefecer"
+	(label "Controle Celula"
 		(at 24.13 185.42 0)
 		(effects
 			(font
@@ -5811,7 +5811,7 @@
 		)
 		(uuid "ca0e737d-ed3c-4fb5-80cb-593f0ffbcdc1")
 	)
-	(label "Controle Celula"
+	(label "Aquecer{slash}Arrefecer"
 		(at 215.9 132.08 0)
 		(effects
 			(font
