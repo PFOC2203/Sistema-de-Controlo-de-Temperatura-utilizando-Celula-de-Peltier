@@ -1,0 +1,94 @@
+tempo_s;temperatura_atual;temperatura_alvo;estado
+0;-0,6;20.00;Desligado 
+10;-0,63;20.00;Desligado 
+20;28,47;20.00;A Arrefecer 
+30;27,45;100.00;A Aquecer 
+40;28,21;80.00;A Aquecer 
+50;29,52;80.00;A Aquecer 
+60;31,08;80.00;A Aquecer 
+70;32,66;80.00;A Aquecer 
+80;34,91;80.00;A Aquecer 
+90;37,21;80.00;A Aquecer 
+100;39,25;80.00;A Aquecer 
+110;41,6;80.00;A Aquecer 
+120;43,82;80.00;A Aquecer 
+130;46,08;80.00;A Aquecer 
+140;47,89;80.00;A Aquecer 
+150;50,08;80.00;A Aquecer 
+160;51,78;80.00;A Aquecer 
+170;53,76;80.00;A Aquecer 
+180;55,64;80.00;A Aquecer 
+190;56,96;80.00;A Aquecer 
+200;58,49;80.00;A Aquecer 
+210;60,32;80.00;A Aquecer 
+220;61,75;80.00;A Aquecer 
+230;63,01;80.00;A Aquecer 
+240;64,44;80.00;A Aquecer 
+250;65,66;80.00;A Aquecer 
+260;66,72;80.00;A Aquecer 
+270;67,98;80.00;A Aquecer 
+280;69,32;80.00;A Aquecer 
+290;70,33;80.00;A Aquecer 
+300;71,14;80.00;A Aquecer 
+310;72,21;80.00;A Aquecer 
+320;73,39;80.00;A Aquecer 
+330;74,34;80.00;A Aquecer 
+340;75,2;80.00;A Aquecer 
+350;77,62;80.00;Estabilizado 
+360;77,02;80.00;Estabilizado 
+370;74,2;80.00;A Aquecer 
+380;74,12;80.00;A Aquecer 
+390;75,04;80.00;A Aquecer 
+400;75,89;80.00;A Aquecer 
+410;77,55;80.00;Estabilizado 
+420;76,51;80.00;Estabilizado 
+430;73,98;80.00;A Aquecer 
+440;74,52;80.00;A Aquecer 
+450;75,53;80.00;A Aquecer 
+460;77,6;80.00;Estabilizado 
+470;76,79;80.00;Estabilizado 
+480;73,37;50.00;A Arrefecer 
+490;73,22;50.00;A Arrefecer 
+500;73,7;50.00;A Arrefecer 
+510;73,5;50.00;A Arrefecer 
+520;73,13;50.00;A Arrefecer 
+530;72,21;50.00;A Arrefecer 
+540;70,97;50.00;A Arrefecer 
+550;69,93;50.00;A Arrefecer 
+560;68,58;50.00;A Arrefecer 
+570;67;50.00;A Arrefecer 
+580;65,82;50.00;A Arrefecer 
+590;64,23;50.00;A Arrefecer 
+600;62,79;50.00;A Arrefecer 
+610;61,53;50.00;A Arrefecer 
+620;60,03;50.00;A Arrefecer 
+630;58,65;50.00;A Arrefecer 
+640;57,27;50.00;A Arrefecer 
+650;56,19;50.00;A Arrefecer 
+660;54,68;50.00;A Arrefecer 
+670;53,68;50.00;A Arrefecer 
+680;53,97;50.00;A Arrefecer 
+690;52,98;50.00;A Arrefecer 
+700;52,21;50.00;Estabilizado 
+710;51,56;50.00;Estabilizado 
+720;51,11;50.00;Estabilizado 
+730;50,85;50.00;Estabilizado 
+740;50,49;50.00;Estabilizado 
+750;49,95;50.00;Estabilizado 
+760;49,72;50.00;Estabilizado 
+770;48,98;50.00;Estabilizado 
+780;48,72;50.00;Estabilizado 
+790;48,26;50.00;Estabilizado 
+800;47,92;50.00;Estabilizado 
+810;47,69;50.00;Estabilizado 
+820;45,5;50.00;A Aquecer 
+830;45,88;50.00;A Aquecer 
+840;46,83;50.00;A Aquecer 
+850;49,6;50.00;Estabilizado 
+860;49,86;50.00;Estabilizado 
+870;49,48;50.00;Estabilizado 
+880;48,9;50.00;Estabilizado 
+890;48,3;50.00;Estabilizado 
+900;47,91;50.00;Estabilizado 
+910;46,02;50.00;A Aquecer 
+920;46,55;50.00;A Aquecer 
